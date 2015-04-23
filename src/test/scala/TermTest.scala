@@ -61,8 +61,8 @@ class TermTest extends SpecificationWithJUnit {
                    _),
                _
              ) =>
-               x must_== 0
-               y must_== 0
+              ("inner index: "+x,"outer index: "+y) must_== ("inner index: 0","outer index: 0")
+
         case _ =>
           ko("result is not of shape Lambda(App(Lambda(LambdaVar(_), LambdaVar(_)))!")
       }
